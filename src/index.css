@@ -27,5 +27,14 @@ code {
 #meme-box .btn {
   background-color: blueviolet;
 }
-
-
+#meme-box .top-meme-text {
+  top:5%;
+  text-align: center;
+}
+#meme-box .bottom-meme-text {
+  bottom:5%;
+  text-align: center;
+}
+#meme-box {
+  top:10px;
+}

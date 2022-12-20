@@ -4,7 +4,7 @@ import TopBar from "./components/TopBar";
 import React from "react"
 import Meme from "./components/Meme";
 function App() {
-  const [textBoxInput, settextBoxInput] = React.useState({
+  const [textBoxInput, setTextBoxInput] = React.useState({
     topInputText: "",
     bottomInputText: "",
   })
@@ -26,7 +26,7 @@ function App() {
 
   function AppStateHandler(event: any) {
     if (event.target.name === "topInputText" || event.target.name === "bottomInputText") {
-      settextBoxInput((prevTextBoxInput) => {
+      setTextBoxInput((prevTextBoxInput) => {
         return {
           ...prevTextBoxInput,
           [event.target.name]: event.target.value
@@ -63,6 +63,8 @@ function App() {
         stateHandler={AppStateHandler}
         name={memeImage.name}
         url={memeImage.url}
+        topMemeText = {textBoxInput.topInputText}
+        bottomMemeText = {textBoxInput.bottomInputText}
       />
     </>
 
