@@ -11,8 +11,11 @@ code {
     monospace;
 }
 
-.container-fluid {
-  padding: 0% 20% 0% 20%;
+.laptop.container-fluid {
+  padding: 2% 20% 2% 20%;
+}
+.mobile.container-fluid {
+  padding: 2%;
 }
 #top-bar-section .container-fluid{
   background-color: blueviolet;
@@ -37,4 +40,7 @@ code {
 }
 #meme-box {
   top:10px;
+}
+#meme-box img {
+  margin: 0 auto;
 }
